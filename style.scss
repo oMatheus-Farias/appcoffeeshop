@@ -5,6 +5,9 @@
   outline: none;
 }
 
+@import 'partials/color';
+@import 'partials/header';
+
 body{
   font-family: 'Playfair Display', serif;
   width: 100%;
