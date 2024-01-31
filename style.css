@@ -27,7 +27,7 @@
   width: 100%;
 }
 
-.banner-content {
+.banner {
   background-color: #1B1107;
   padding-bottom: 2.5em;
 }
@@ -93,27 +93,34 @@
   transform: scale(1.2);
 }
 
-@media screen and (min-width: 51.87em) {
-  .banner-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+@media screen and (min-width: 60em) {
+  .banner {
+    background-color: #1B1107;
+    padding: 0 2.5em 2.5em;
   }
   .banner-image-container {
     grid-column: 2;
     grid-row: 1;
+    margin-right: 0;
   }
   .banner-text-container {
     grid-column: 1;
     grid-row: 1;
-    padding: 0px 0px 0px 40px;
     max-width: 26.25em;
     position: relative;
+    padding: 0 0;
   }
   .banner-nav-container {
     position: absolute;
     bottom: 0;
-    left: 2.5em;
+    left: 0;
+  }
+  .banner-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    max-width: 1600px;
+    margin: 0 auto;
   }
 }
 body {
