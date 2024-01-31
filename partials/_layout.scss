@@ -89,7 +89,6 @@
   .banner-text-container{
     grid-column: 1;
     grid-row: 1;
-    // padding: 0px 0px 0px 40px;
     max-width: 26.25em;
     position: relative;
     padding: 0 0;
@@ -101,11 +100,72 @@
     left: 0;
   }
 
-  .banner-content{
+  .banner-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    max-width: 1600px;
+    max-width: 100em;
     margin: 0 auto;
+  }
+}
+
+.about{
+  background-color: $secondary-color;
+  padding: 2.5em;
+}
+
+.about-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image-container{
+  max-width: 21.87em;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.about-text-container{
+  margin-top: 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 21.87em;
+
+  h2{
+    font-size: 2.25em;
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  p{
+    margin-top: 1.25em;
+    color: $primary-color;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (min-width: 60em){
+  .about-container{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 87.5em;
+    margin: 0 auto;
+  }
+
+  .about-image-container{
+    max-width: 25em;
+  }
+}
+
+@media screen and (min-width: 75em){
+  .about-image-container{
+    max-width: 35.62em;
   }
 }
