@@ -155,6 +155,7 @@
   color: #1B1107;
 }
 .about-text-container p {
+  font-weight: 500;
   margin-top: 1.25em;
   color: #1B1107;
   line-height: 1.4;
