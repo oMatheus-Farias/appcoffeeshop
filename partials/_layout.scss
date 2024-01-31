@@ -76,7 +76,6 @@
 
 @media screen and (min-width: 60em){
   .banner{
-    background-color: $primary-color;
     padding: 0 2.5em 2.5em;
   }
 
@@ -167,5 +166,63 @@
 @media screen and (min-width: 75em){
   .about-image-container{
     max-width: 35.62em;
+  }
+}
+
+.products{
+  width: 100%;
+  padding: 2.5em;
+  background-color: $tertiary-color;
+
+  h2{
+    font-size: 2.25em;
+    font-weight: bold;
+    color: $primary-color;
+    text-align: center;
+  }
+}
+
+.products-position{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+  margin-top: 2.5em;
+}
+
+.products-container{
+  background-color: $clear-color;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+.products-image-container{
+  max-width: 17.5em;
+
+  img{
+    width: 100%;
+  }
+}
+
+.products-text-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  font-weight: bold;
+  
+  span{
+    background-color: $red-color;
+    padding: 0.25em 1.25em;
+    border-radius: 0.25em;
+    color: $white-color;
+  }
+}
+
+@media screen and (min-width: 55em){
+  .products-position{
+    flex-direction: row;
+    justify-content: center;
   }
 }

@@ -95,7 +95,6 @@
 
 @media screen and (min-width: 60em) {
   .banner {
-    background-color: #1B1107;
     padding: 0 2.5em 2.5em;
   }
   .banner-image-container {
@@ -176,6 +175,60 @@
 @media screen and (min-width: 75em) {
   .about-image-container {
     max-width: 35.62em;
+  }
+}
+.products {
+  width: 100%;
+  padding: 2.5em;
+  background-color: #DCB288;
+}
+.products h2 {
+  font-size: 2.25em;
+  font-weight: bold;
+  color: #1B1107;
+  text-align: center;
+}
+
+.products-position {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+  margin-top: 2.5em;
+}
+
+.products-container {
+  background-color: #E9E9E9;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+.products-image-container {
+  max-width: 17.5em;
+}
+.products-image-container img {
+  width: 100%;
+}
+
+.products-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  font-weight: bold;
+}
+.products-text-container span {
+  background-color: #D94140;
+  padding: 0.25em 1.25em;
+  border-radius: 0.25em;
+  color: #FFF;
+}
+
+@media screen and (min-width: 55em) {
+  .products-position {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 body {
