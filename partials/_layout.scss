@@ -1,0 +1,102 @@
+.main-content{
+  width: 100%;
+}
+
+.banner-content{
+  background-color: $primary-color;
+  padding-bottom: 2.5em;
+}
+
+.banner-image-container{
+  max-width: 33.75em;
+  margin: 0 auto;
+  padding-left: 2.5em;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.banner-text-container{
+  width: 100%;
+  margin-top: 2.5em;
+  padding: 0 2.5em;
+
+  h1{
+    font-weight: 800;
+    font-size: 3.12em;
+    color: $clear-color;
+  }
+
+  p{
+    color: $clear-color;
+    margin-top: 1.25em;
+    line-height: 1.4;
+  }
+
+  button{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: $golden-color;
+    padding: 0.5em 1.25em;
+    margin-top: 2.5em;
+    border-radius: 0.25em;
+    background-color: transparent;
+    border: 0.12em solid $golden-color;
+    cursor: pointer;
+    transition: all .4s;
+  }
+
+  button:hover{
+    background-color: $golden-color;
+    color: $primary-color;
+  }
+}
+
+.banner-nav-container{
+  margin-top: 2.5em;
+  display: flex;
+  align-items: center;
+  gap: 1.12em;
+
+  i{
+    font-size: 2.12em;
+    color: $golden-color;
+    cursor: pointer;
+    transition: all .2s;
+  }
+
+  i:hover{
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (min-width: 51.87em){
+  .banner-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .banner-image-container{
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .banner-text-container{
+    grid-column: 1;
+    grid-row: 1;
+    padding: 0px 0px 0px 40px;
+    max-width: 26.25em;
+    position: relative;
+  }
+
+  .banner-nav-container{
+    position: absolute;
+    bottom: 0;
+    left: 2.5em;
+  }
+}
