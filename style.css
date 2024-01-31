@@ -231,6 +231,46 @@
     justify-content: center;
   }
 }
+.map-content {
+  width: 100%;
+}
+
+.footer-bottom {
+  padding: 2.5em 0.5em;
+  background-color: #1B1107;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25em;
+}
+.footer-bottom p {
+  font-size: 0.5em;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 0.87em;
+}
+.footer-nav i {
+  font-size: 1em;
+  color: #FFF;
+  transition: color 0.4s;
+}
+.footer-nav i:hover {
+  color: #FFA822;
+}
+
+@media screen and (min-width: 31.25em) {
+  .footer-bottom p {
+    font-size: 0.87em;
+  }
+  .footer-nav i {
+    font-size: 1.25em;
+  }
+}
 body {
   font-family: "Playfair Display", serif;
   width: 100%;
