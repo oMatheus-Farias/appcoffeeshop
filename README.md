@@ -13,7 +13,7 @@ Projeto de uma Landing Page, denominado CoffeeShop, uma aplicação web que visa
 - Frase convidativa: "Descubra a Arte do Café Perfeito" captura a essência da experiência
 
 #### Seção de Pedido Imediato:
-- Botão estratégico para pedidos rápidos, incentivando a interação imediata
+- Botão estratégico para pedidos rápidos, incentivando a interação imediata com direcionamento para o WhatsApp (fictício)
 - Ícones de redes sociais para fácil acesso às plataformas online da cafeteria
 
 ### Sobre a Cafeteria:
