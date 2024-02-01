@@ -207,9 +207,15 @@
 
 .products-image-container {
   max-width: 17.5em;
+  overflow: hidden;
 }
 .products-image-container img {
   width: 100%;
+  transition: all 0.2s;
+}
+
+.products-container:hover img {
+  transform: scale(1.1);
 }
 
 .products-text-container {
