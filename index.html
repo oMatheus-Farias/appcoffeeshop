@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Matheus Farias" />
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <title>CoffeShop - Sua Cafeteria</title>
 </head>
@@ -27,14 +29,14 @@
   <main class="main-content" >
     <section class="banner" >
       <div class="banner-container" >
-        <div class="banner-image-container" >
+        <div class="banner-image-container" data-aos="fade-up-left" data-aos-delay="300" >
           <img
             src="assets/main-image.png"
             alt="Banner Cup with coffee"
           />
         </div>
   
-        <div class="banner-text-container" >
+        <div class="banner-text-container" data-aos="fade-right" data-aos-delay="550" >
           <h1>Descubra a Arte do Café Perfeito</h1>
   
           <p>
@@ -58,14 +60,14 @@
 
     <section class="about" >
       <div class="about-container" >
-        <div class="about-image-container" >
+        <div class="about-image-container" data-aos="flip-left" >
           <img
             src="assets/images.png"
             alt="Group of coffe images"
           />
         </div>
   
-        <div class="about-text-container" >
+        <div class="about-text-container" data-aos="zoom-in-up" >
           <h2>Sobre</h2>
   
           <p>
@@ -79,7 +81,7 @@
       <h2>Produtos</h2>
 
       <div class="products-position" >
-        <section class="products-container" >
+        <section class="products-container" data-aos="fade-up" data-aos-delay="150" >
           <div class="products-image-container" >
             <img
               src="assets/coffe-image01.png"
@@ -92,7 +94,7 @@
             <span>R$ 24,99</span>
           </div>
         </section>
-        <section class="products-container" >
+        <section class="products-container" data-aos="fade-up" data-aos-delay="550" >
           <div class="products-image-container" >
             <img
               src="assets/coffe-image02.png"
@@ -105,7 +107,7 @@
             <span>R$ 20,00</span>
           </div>
         </section>
-        <section class="products-container" >
+        <section class="products-container" data-aos="fade-up" data-aos-delay="850" >
           <div class="products-image-container" >
             <img
               src="assets/coffe-image03.png"
@@ -145,5 +147,7 @@
       </nav>
     </div>
   </footer>
+
+  <script src="script.js" ></script>
 </body>
 </html>
