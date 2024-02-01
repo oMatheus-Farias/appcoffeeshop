@@ -1,0 +1,48 @@
+.map-content{
+  width: 100%;
+}
+
+.footer-bottom{
+  padding: 2.5em 0.5em;
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25em;
+
+  p{
+    font-size: 0.5em;
+    font-weight: bold;
+    color: $white-color;
+  }
+}
+
+.footer-nav{
+  display: flex;
+  gap: 0.87em;
+
+  i{
+    font-size: 1em;
+    color: $white-color;
+    transition: color .4s;
+  }
+
+  i:hover{
+    color: $golden-color;
+  }
+}
+
+@media screen and (min-width: 31.25em){
+  .footer-bottom{
+    p{
+      font-size: 0.87em;
+    }
+  }
+
+  .footer-nav{
+    i{
+      font-size: 1.25em;
+    }
+  }
+}
